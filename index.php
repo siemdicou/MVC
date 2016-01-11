@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>MVC Model</title>
 </head>
 <body>
 
 </body>
 </html>
+<?php 
+	include 'includes/database.php';
+	include 'config/config.php';
+ ?>
