@@ -5,8 +5,8 @@
 </head>
 <body>
 <?php
-	include 'includes/database.php';
 	include 'config/config.php';
+	include 'includes/database.php';
 	require_once 'model/student_model.php';
 	include 'views/show_student.php';
 ?>
