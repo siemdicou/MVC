@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>MVC Model</title>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <?php
