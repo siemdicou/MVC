@@ -14,7 +14,7 @@ HttpRequest.prototype.load = function(url, callback)
     // je geeft eerst de method GET/POST en de url door
     xmlhttp.open("GET", url);
     xmlhttp.send(); // met send() halen we de data op (asynchroon)
-    
+
     // we luisteren of er iets gebeurd (foutmelding of succes)
     // we moeten wel luisteren aangezien send() asynchroon gebeurd.
     xmlhttp.addEventListener('readystatechange', function () {
@@ -28,6 +28,10 @@ HttpRequest.prototype.load = function(url, callback)
                 // de data is in JSON formaat. Met JSON.parse() zetten we het eerst om naar een echt object
                 callback( JSON.parse(xmlhttp.responseText) );
                 
+                 {
+                // de data is in JSON formaat. Met JSON.parse() zetten we het eerst om naar een echt object
+                callback( JSON.parse(xmlhttp.responseText) );
+
             }
         }
     });

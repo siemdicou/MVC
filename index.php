@@ -4,6 +4,9 @@
 	<title>MVC Model</title>
 	<script  type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/script.js"></script>
+
 </head>
 <body>
 <?php
