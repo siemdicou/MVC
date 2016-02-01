@@ -1,0 +1,42 @@
+$black: #000000;
+
+html body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.siem {
+	border: 5px  solid $black;
+	width: 40%;
+	padding: 0% 1%; 
+}
+.name{
+	width: 100%;
+	/*display: inline-block;*/
+	img{
+		width: 20%;
+		display: inline-block;
+		float: left;
+		margin-right: 2%;
+	}
+	h2{
+		margin: 0px;
+		padding:0px;
+	 }
+	p{
+		margin: 0px;
+		padding:0px;
+	}
+
+}
+.selectbox{
+	margin-left: 3%;
+}
+table {
+	width:100%;
+	.number{
+		text-align:center;
+	}
+
+}
