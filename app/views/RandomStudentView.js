@@ -54,7 +54,6 @@ app.randomStudentsView = {
         console.log(this);
 
         var randomgras = Math.floor(Math.random()*this.grasData.species.length);
-
         console.log(randomgras);
         this.render(this.grasData.species[randomgras]);
 

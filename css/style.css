@@ -27,7 +27,22 @@ html body {
 .selectbox {
   margin-left: 3%; }
 
-table {
+#table1 {
   width: 100%; }
-  table .number {
+  #table1 .number {
     text-align: center; }
+
+#table2 {
+  width: 60%;
+  display: inline block; }
+  #table2 .number {
+    text-align: center; }
+    
+canvas{
+  border: solid 1px;
+  display: inline-block; 
+}
+/*.container{
+  font-size: 28px;
+  font-weight: bold;
+}*/

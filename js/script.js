@@ -5,6 +5,7 @@
  */
 function HttpRequest()
 {
+    
 }
 
 HttpRequest.prototype.load = function(url, callback)
@@ -34,5 +35,6 @@ HttpRequest.prototype.load = function(url, callback)
 
             }
         }
-    });
-};
+    }  
+});
+}
