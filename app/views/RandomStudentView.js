@@ -5,12 +5,14 @@ var app = app || {};
 // als je op shuffle klikt, dan moet dit script dit afvangen en actie ondernemen
 // om bij de model iets op te halen
 
+
 app.randomStudentsView = {
+
 
     // onze init functie voeren we 1x uit
     // deze functie initialiseert alles
     init: function(model){
-
+// console.table(jArray);
         this.model = model;
 
         // Grab the template script from the dom
@@ -22,16 +24,19 @@ app.randomStudentsView = {
 
         // deze data moet UIT de view gehaald worden
         // jullie hebben je data in studentsModel.js staan!
-        this.grasData = {
-            species: [
 
-                {firstName: "grodia", id: 0, age: 6},
-                {firstName: "klacia", id: 1, age: 26},
-                {firstName: "biaka",  id: 2, age: 452},
-                {firstName: "lorki",  id: 3, age: 534}
-            ]
-        };
+        this.data = jArray;
+        console.table(this.data);
+        console.log(this.data['Age']);
+        // this.grasData = {
+        //     species: [
 
+        //         {firstName: "grodia", id: 0, age: 6},
+        //         {firstName: "klacia", id: 1, age: 26},
+        //         {firstName: "biaka",  id: 2, age: 452},
+        //         {firstName: "lorki",  id: 3, age: 534}
+        //     ]
+        // };
 
 
 
@@ -51,11 +56,14 @@ app.randomStudentsView = {
     shuffleStudent: function(e){
         // haal een random student op bij de model
         // en gebruik this.template() om vervolgens de template te updaten
-        console.log(this);
+        // console.log(this);
 
-        var randomgras = Math.floor(Math.random()*this.grasData.species.length);
+        var randomgras = Math.floor(Math.random()*this.data.length);
+
         console.log(randomgras);
-        this.render(this.grasData.species[randomgras]);
+        this.render(this.data[randomgras]);
+        var test2 = this.render(this.data(Age).sort(function(a, b){return b-a}));
+        console.log (test2);
 
         // als voorbeeld gooi ik de container met namen leeg. Ik mag nu bij this.container
         // omdat we met bind(this) zelf hebben gekozen waar 'this' naar moet verwijzen

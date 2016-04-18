@@ -21,9 +21,9 @@
 	require 'includes/database.php';
 	require_once 'model/student_model.php';
 	require'views/show_student.php';
-	json_encode($students);
 ?>
 <script type="text/javascript">
+ var jArray= <?php echo json_encode($students ); ?>;
 
 	// HttpRequest();
 
@@ -51,10 +51,10 @@
 <!--<div>gras</div>-->
 
 	<div class="name">
-		<img src="http://3.bp.blogspot.com/-3COVCT94JFQ/U5oD5oS2VNI/AAAAAAAAI_8/JH0Spiq6VbQ/s1600/Hi-smiley.png">
-		<div class="container"><h2>hi</h2></div>
+		<!-- <img src="http://3.bp.blogspot.com/-3COVCT94JFQ/U5oD5oS2VNI/AAAAAAAAI_8/JH0Spiq6VbQ/s1600/Hi-smiley.png"> -->
+		<div class="container"><h2>dave</h2></div>
 		<script id="students-template" type="text/x-handlebars-template">
-		<h2 data-id="{{id}}">{{firstName}}</script></h2>
+		<h2 data-id="{{id}}">{{Firstname}} {{Lastname}}</script></h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -73,7 +73,8 @@
 	<table border="1px" id="table1">
 		<tr>
 			<td><div class="number">1</div></td>
-			<td>dave</td>
+			<td><script id="students-template" type="text/x-handlebars-template">
+		<p data-id="{{id}}">{{Firstname}} {{Lastname}}</script></p></td>
 		</tr>
 		<tr>
 			<td><div class="number">2</div></td>
